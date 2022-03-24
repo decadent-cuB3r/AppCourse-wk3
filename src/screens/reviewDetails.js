@@ -2,8 +2,8 @@ import React from 'react';
 import { Text, StyleSheet, View, Image, Pressable, ScrollView, TouchableOpacity } from 'react-native';
 import Rating from '../components/rating';
 
-const ReviewDetails = ({ navigation }) => {
-
+export default function ReviewDetails({ navigation }) {
+  const {title, author, image, rating, description, price} = navigation.params;
 
   return (
     <View style={styles.container}>
@@ -12,9 +12,9 @@ const ReviewDetails = ({ navigation }) => {
         showsVerticalScrollIndicator={false}
       >
         <View style={styles.imageBox}>
-          <Image source={navigation.getParam(image)} />
+          <Image source={image} />
         </View>
-        <Text style={styles.title}>{navigation.getParam(title)}</Text>
+        <Text style={styles.title}>{title}</Text>
         <Text style={styles.author}>{author}</Text>
         {
           rating != null
@@ -36,8 +36,6 @@ const ReviewDetails = ({ navigation }) => {
     </View>
   );
 }
-
-export default ReviewDetails;
 
 const styles = StyleSheet.create({
   container: {

@@ -5,10 +5,10 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList, DrawerItem } from '@react-navigation/drawer';
 
-import HomeScreen from '../screens/HomeScreen';
+import HomeScreen from '../screens/home';
 import WishlistScreen from '../screens/WishlistScreen';
 import MyBooksScreen from '../screens/MyBooksScreen';
-import BookInfoScreen from '../screens/BookInfoScreen';
+import BookInfoScreen from '../screens/reviewDetails';
 import AccountScreen from '../screens/AccountScreen';
 import SettingScreen from '../screens/SettingScreen';
 
