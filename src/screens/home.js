@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, View, Text, ScrollView } from 'react-native';
-import bookList from '../components/bookList';
+import BookList from '../components/bookList';
 import newBookList from '../json/newBookList.json';
 import popularBookList from '../json/popularBookList.json'
 
-export default function home({navigation}) {
+export default function Home({ navigation }) {
     const [newBooks, setNewBooks] = useState(newBookList);
     const [popBooks, setPopBooks] = useState(popularBookList);
 
@@ -14,10 +14,10 @@ export default function home({navigation}) {
             showsVerticalScrollIndicator={false}
         >
             <Text style={styles.title}>Popular Books</Text>
-            <bookList navigation={navigation} data={popBooks}/>
-            <Text style={[styles.title, {fontWeight: '600'}]}></Text>
-            <bookList navigation={navigation} data={newBooks}/>
-            <View style={styles.bottomSpace}>Newest</View>
+            <BookList data={popBooks} navigation={navigation}/>
+            <Text style={[styles.title, {fontWeight: '600'}]}>Newest</Text>
+            <BookList data={newBooks} navigation={navigation}/>
+            <View style={styles.bottomSpace}></View>
         </ScrollView>
     );
 }

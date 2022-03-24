@@ -5,7 +5,7 @@
         "url": "https://www.amazon.com/Yves-Saint-Laurent-Collections-1962-2002/dp/0300243650",
         "image": "../../assets/bookImage/ysl.png",
         "price": 72.00,
-        "score": "4.0",
+        "rating": 4,
         "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion"
     },
     {
@@ -14,7 +14,7 @@
         "url": "https://www.amazon.com/Book-Signs-Dover-Pictorial-Archive/dp/0486201627",
         "image": "../../assets/bookImage/tbos.png",
         "price": 9.95,
-        "score": "3.0",
+        "rating": 3,
         "description": "This unusual collection of primitive and medieval symbols provides one of the most fertile single sources of decorative ideas available today. It is also a graphic history of the development of written communication and offers a singular insight into the psychology of the primitive mind."
     },
     {
@@ -23,7 +23,7 @@
         "url": "https://www.amazon.com/Stitched-Up-Anti-Capitalist-Fashion-Counterfire/dp/0745334563",
         "image": "../../assets/bookImage/stitchedup.png",
         "price": 19.95,
-        "score": "3.0",
+        "rating": 3,
         "description": "Stitched Up delves into the alluring world of fashion to reveal what is behind the clothes we wear. Moving between Karl Lagerfeld and Karl Marx, the book explores consumerism, class and advertising to reveal the interests which benefit from exploitation."
     }
 ]
