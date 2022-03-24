@@ -4,7 +4,7 @@ import Rating from './rating';
 
 const BookDetail = ({ data, navigation }) => {
     return (
-        <Pressable style={styles.bookWrapper} onPress={() => navigation.navigate('BookInfo', data)}>
+        <Pressable style={styles.bookWrapper} onPress={() => navigation.navigate('ReviewDetails', data)}>
             {
                 data.rating != null
                     ? (
