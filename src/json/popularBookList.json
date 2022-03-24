@@ -1,29 +1,31 @@
-[
+{
+  "popularBooks": [
     {
-        "title": "Fashionpolis",
-        "author": "Dana Thomas",
-        "url": "https://www.amazon.com/Fashionopolis-Price-Fashion-Future-Clothes/dp/0735224013",
-        "image": "../../assets/bookImage/fashinopolis.png",
-        "price": 13.74,
-        "rating": null,
-        "description": "An investigation into the damage wrought by the colossal clothing industry and the grassroots, high-tech, international movement fighting to reform it "
+      "title": "Fashionpolis",
+      "author": "Dana Thomas",
+      "url": "https://www.amazon.com/Fashionopolis-Price-Fashion-Future-Clothes/dp/0735224013",
+      "image": "https://i.pinimg.com/564x/cc/1e/63/cc1e6373b8513d776fa28e7f3e58fd14.jpg",
+      "price": 13.74,
+      "rating": null,
+      "description": "An investigation into the damage wrought by the colossal clothing industry and the grassroots, high-tech, international movement fighting to reform it "
     },
     {
-        "title": "Chanel",
-        "author": "Patrick Mauriès",
-        "url": "https://www.amazon.com/Chanel-Complete-Collections-Patrick-Mauri%C3%A8s/dp/0300254644",
-        "image": "../../assets/bookImage/chanel.png",
-        "price": 54.24,
-        "rating": null,
-        "description": "A comprehensive and captivating overview of all of Karl Lagerfeld’s Chanel collections, showcasing his creations through original catwalk photography"
+      "title": "Chanel",
+      "author": "Patrick Mauriès",
+      "url": "https://www.amazon.com/Chanel-Complete-Collections-Patrick-Mauri%C3%A8s/dp/0300254644",
+      "image": "https://i.pinimg.com/564x/a8/3b/59/a83b59e08eb97a652fb375237cb0372b.jpg",
+      "price": 54.24,
+      "rating": null,
+      "description": "A comprehensive and captivating overview of all of Karl Lagerfeld’s Chanel collections, showcasing his creations through original catwalk photography"
     },
     {
-        "title": "Calligraphy",
-        "author": "June & Lucy",
-        "url": "https://www.amazon.com/Ultimate-Modern-Calligraphy-Lettering-Beginners/dp/1646081498",
-        "image": "../../assets/bookImage/calligraphy.png",
-        "price": 6.99,
-        "rating": null,
-        "description": "My goal with this book is to help you avoid the countless months of research, trial and error, and mistakes that I made along the way, by giving you a straight forward, easy to understand explanation of the process behind hand lettering so that you can start your lettering journey with a strong foundation."
+      "title": "Calligraphy",
+      "author": "June & Lucy",
+      "url": "https://www.amazon.com/Ultimate-Modern-Calligraphy-Lettering-Beginners/dp/1646081498",
+      "image": "https://i.pinimg.com/564x/21/72/88/217288f140f767590ce987eea4a70b23.jpg",
+      "price": 6.99,
+      "rating": null,
+      "description": "My goal with this book is to help you avoid the countless months of research, trial and error, and mistakes that I made along the way, by giving you a straight forward, easy to understand explanation of the process behind hand lettering so that you can start your lettering journey with a strong foundation."
     }
-]
+  ]
+}

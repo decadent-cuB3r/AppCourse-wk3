@@ -2,29 +2,29 @@ import React from 'react';
 import { StyleSheet, Text, Image, Pressable, View } from 'react-native';
 import Rating from './rating';
 
-const BookDetail = ({data, navigation}) => {
+const BookDetail = ({ data, navigation }) => {
     return (
-        <Pressable style={styles.bookWrapper} onPress={()=> navigation.navigate('BookInfo', data)}>
+        <Pressable style={styles.bookWrapper} onPress={() => navigation.navigate('BookInfo', data)}>
             {
                 data.rating != null
-                ? (
-                    <>
-                    <View>
-                        <Image source={{ uri: data.image}} style={styles.image} />
-                    </View>
-                    <Rating data={data.rating}/>
-                    <Text style={styles.title}>{data.title}</Text>
-                    <Text style={styles.author}>{data.author}</Text>
-                    </>
-                ):(
-                    <>
-                    <View style={styles.imageBox}>
-                        <Image source={{uri: data.image}} style={styles.image} />
-                    </View>
-                    <Text style={styles.title}>{data.title}</Text>
-                    <Text style={styles.author}>{data.author}</Text>
-                    </>
-                )
+                    ? (
+                        <>
+                            <View>
+                                <Image source={{uri: data.image}} style={styles.image} />
+                            </View>
+                            <Rating data={data.rating} />
+                            <Text style={styles.title}>{data.title}</Text>
+                            <Text style={styles.author}>{data.author}</Text>
+                        </>
+                    ) : (
+                        <>
+                            <View style={styles.imageBox}>
+                                <Image source={{uri: data.image}} />
+                            </View>
+                            <Text style={styles.title}>{data.title}</Text>
+                            <Text style={styles.author}>{data.author}</Text>
+                        </>
+                    )
             }
         </Pressable>
     );
@@ -39,12 +39,12 @@ const styles = StyleSheet.create({
     },
     imageBox: {
         shadowColor: '#414144',
-        shadowOffset: {width: 0, height: 16},
+        shadowOffset: { width: 0, height: 16 },
         shadowOpacity: 0.1,
         shadowRadius: 32,
         elevation: 10, //Android only
     },
-    image:{
+    image: {
         width: 140,
         height: 200,
         marginBottom: 16,

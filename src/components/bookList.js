@@ -5,11 +5,13 @@ import BookDetail from "./bookDetail";
 const bookList = ({ data, navigation }) => {
     const renderItem = ({ item }) => <BookDetail data={item} navigation={navigation} />;
     return (
-        <FlatList
-            data={data}
-            renderItem={renderItem}
-            keyExtractor={item => item.title}
-        />
+        <View>
+            <FlatList
+                data={data}
+                renderItem={renderItem}
+                keyExtractor={item => item.title}
+            />
+        </View>
     )
 }
 

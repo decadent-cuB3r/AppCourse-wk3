@@ -5,8 +5,8 @@ import newBookList from '../json/newBookList.json';
 import popularBookList from '../json/popularBookList.json'
 
 export default function Home({ navigation }) {
-    const [newBooks, setNewBooks] = useState(newBookList);
-    const [popBooks, setPopBooks] = useState(popularBookList);
+//    const [newBooks, setNewBooks] = useState(newBookList);
+//    const [popBooks, setPopBooks] = useState(popularBookList);
 
     return (
         <ScrollView 
@@ -14,9 +14,9 @@ export default function Home({ navigation }) {
             showsVerticalScrollIndicator={false}
         >
             <Text style={styles.title}>Popular Books</Text>
-            <BookList data={popBooks} navigation={navigation}/>
+            <BookList data={popularBookList.popularBooks} navigation={navigation}/>
             <Text style={[styles.title, {fontWeight: '600'}]}>Newest</Text>
-            <BookList data={newBooks} navigation={navigation}/>
+            <BookList data={newBookList} navigation={navigation}/>
             <View style={styles.bottomSpace}></View>
         </ScrollView>
     );
