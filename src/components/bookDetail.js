@@ -10,7 +10,7 @@ const BookDetail = ({data, navigation}) => {
                 ? (
                     <>
                     <View>
-                        <Image source={data.image} style={styles.image} />
+                        <Image source={{ uri: data.image}} style={styles.image} />
                     </View>
                     <Rating data={data.rating}/>
                     <Text style={styles.title}>{data.title}</Text>
@@ -19,7 +19,7 @@ const BookDetail = ({data, navigation}) => {
                 ):(
                     <>
                     <View style={styles.imageBox}>
-                        <Image source={data.image} style={styles.image} />
+                        <Image source={{uri: data.image}} style={styles.image} />
                     </View>
                     <Text style={styles.title}>{data.title}</Text>
                     <Text style={styles.author}>{data.author}</Text>
