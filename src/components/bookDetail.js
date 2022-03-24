@@ -9,7 +9,7 @@ const BookDetail = ({ data, navigation }) => {
                 data.rating != null
                     ? (
                         <>
-                            <View>
+                            <View style={styles.image}>
                                 <Image source={{uri: data.image}} style={styles.image} />
                             </View>
                             <Rating data={data.rating} />

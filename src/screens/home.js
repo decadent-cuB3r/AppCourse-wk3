@@ -13,10 +13,10 @@ export default function Home({ navigation }) {
             style={styles.container}
             showsVerticalScrollIndicator={false}
         >
-            <Text style={styles.title}>Popular Books</Text>
+            <Text style={styles.title}>{popularBookList.title}</Text>
             <BookList data={popularBookList.popularBooks} navigation={navigation}/>
-            <Text style={[styles.title, {fontWeight: '600'}]}>Newest</Text>
-            <BookList data={newBookList} navigation={navigation}/>
+            <Text style={[styles.title, {fontWeight: '600'}]}>{newBookList.title}</Text>
+            <BookList data={newBookList.newBooks} navigation={navigation}/>
             <View style={styles.bottomSpace}></View>
         </ScrollView>
     );
