@@ -1,19 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, SafeViewArea } from 'react-native';
+import Navigator from './src/routes/homeStack'
 
 export default function App() {
   return (
-    <SafeViewArea>
-      
-    </SafeViewArea>
+    <View>
+      <Navigator />
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  
 });
