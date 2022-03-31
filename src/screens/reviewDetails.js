@@ -2,38 +2,41 @@ import React from 'react';
 import { Text, StyleSheet, View, Image, Pressable, ScrollView, TouchableOpacity } from 'react-native';
 import Rating from '../components/rating';
 
-export default function ReviewDetails({ navigation }) {
-  const {title, author, image, rating, description, price} = navigation.params;
+export default function ReviewDetails({navigation}) {
+  const {title, author, url, image, price, rating, description} = navigation.params;
 
   return (
-    <View style={styles.container}>
-      <ScrollView
-        contentContainerStyle={styles.scrollViewContainer}
-        showsVerticalScrollIndicator={false}
-      >
-        <View style={styles.imageBox}>
-          <Image source={image} />
-        </View>
-        <Text style={styles.title}>{title}</Text>
-        <Text style={styles.author}>{author}</Text>
-        {
-          rating != null
-            ? (
-              <View style={styles.rating}>
-                <Rating data={rating} />
-                <Text style={styles.score}>{rating}.0</Text>
-                <Text style={styles.scoreTotal}> / 5.0</Text>
-              </View>
-            ) : (
-              null
-            )
-        }
-        <Text style={styles.description}>{description}</Text>
-        <TouchableOpacity style={styles.btn}>
-          <Text style={styles.btnText}>BUY NOW FOR ${price}</Text>
-        </TouchableOpacity>
-      </ScrollView>
+    <View>
+      <Text>{navigation.params.title}</Text>
     </View>
+    // <View style={styles.container}>
+    //   <ScrollView
+    //     contentContainerStyle={styles.scrollViewContainer}
+    //     showsVerticalScrollIndicator={false}
+    //   >
+    //     <View style={styles.imageBox}>
+    //       <Image source={image} />
+    //     </View>
+    //     <Text style={styles.title}>{title}</Text>
+    //     <Text style={styles.author}>{author}</Text>
+    //     {
+    //       rating != null
+    //         ? (
+    //           <View style={styles.rating}>
+    //             <Rating data={rating} />
+    //             <Text style={styles.score}>{rating}.0</Text>
+    //             <Text style={styles.scoreTotal}> / 5.0</Text>
+    //           </View>
+    //         ) : (
+    //           null
+    //         )
+    //     }
+    //     <Text style={styles.description}>{description}</Text>
+    //     <TouchableOpacity style={styles.btn}>
+    //       <Text style={styles.btnText}>BUY NOW FOR ${price}</Text>
+    //     </TouchableOpacity>
+    //   </ScrollView>
+    // </View>
   );
 }
 

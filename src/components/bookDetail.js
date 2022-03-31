@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, Image, Pressable, View } from 'react-native';
 import Rating from './rating';
+import NewbookList from '../json/newBookList.json';
 
 const BookDetail = ({ data, navigation }) => {
     return (

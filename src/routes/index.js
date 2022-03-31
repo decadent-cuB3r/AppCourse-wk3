@@ -40,12 +40,12 @@ const HomeStackNavigator = () => {
                 headerTitle: '',
                 headerRight: () => (
                     <TouchableOpacity onPress={() => alert('Search')}>
-                        <Image source={require('../../assets/icons/icon_search.png')} style={styles.navIcon}/>
+                        <Image source={require('../../assets/icon/search.png')} style={styles.navIcon}/>
                     </TouchableOpacity>
                 ),
                 headerLeft: () => (
                     <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
-                        <Image source={require('../../assets/icons/icon_menu.png')} style={styles.navIcon}/>
+                        <Image source={require('../../assets/icons/menu.png')} style={styles.navIcon}/>
                     </TouchableOpacity>
                 ),
             })}
